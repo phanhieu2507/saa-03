@@ -1,0 +1,2 @@
+- managed zfs
+- support smb

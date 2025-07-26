@@ -22,7 +22,10 @@ ECS is AWS Docker Service. You can launch and modify containers as tasks in mult
 
 ### Task Role
 - Defines Permissons for the code running in the container (access to other services)
-
+### Intergration with ELB
+- ALB is good
+- NLB is for low latency
+- CLB not recommended
 ## Autoscaling
 - Scale on CPU, Mem or [[ELB]] traffic per target
 - Scaling Fargate is easier

@@ -38,10 +38,10 @@ AWS standard queue service. Has ton of features like fifo and multi consumer. Sc
 
 ### Fifo
 - first in first out
-- needs to end with .fifo
-- delivered exactly once
+- needs to end with .fifo ( queue name)
+- delivered exactly once (content base deduplicatted check button ), grouped => odering message with same group id
 - max 3k per second with batching
-- max 300 per second withut batching
+- max 300 per second without batching
 
 ## Security
 - https api 
@@ -53,10 +53,11 @@ AWS standard queue service. Has ton of features like fifo and multi consumer. Sc
 - resource based permissions
 - cross account
 - other services without iam role
+- same as s3 acl
 
 ## Visibilty Timeout
 - after polled msg becomes invisible
-- set to process time to stop being processed twices
+- set to process time to stop being processed twices (ChangeMessageVisibility API)
 - if process time takes longer can use SQS API to increase visibilty timeout for this message
 
 ## Long Poling

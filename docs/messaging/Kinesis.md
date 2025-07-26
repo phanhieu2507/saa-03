@@ -30,6 +30,7 @@ Kinesis is a set of services for streaming real time or next to real time data i
 
 #### Consumer
 - recieves partion key, seceqnce number and blog
+- choose time to read => iterator
 - thoughput 2mbs per sec shared for all consumers
 - enhances 2mb per sec per consumer
 - apps using sdk
@@ -40,7 +41,7 @@ Kinesis is a set of services for streaming real time or next to real time data i
 ### Retention
 - between 1 and 365 days
 - can replay data
-- immutabilty
+- immutabilty ( can not be change )
 
 ### Modes
 

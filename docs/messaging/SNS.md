@@ -2,7 +2,7 @@
 # Amazon Simple Notification Service
 
 ## TLDR
-Message queue with a subscriber model. It can send the same message to alot of diffrent services at once. Scales good but not indefinetly.
+Message queue with a subscriber model. It can send the same message to alot of different services at once. Scales good but not indefinetly.
 
 ## Features
 - subscriber async model
@@ -50,9 +50,9 @@ Message queue with a subscriber model. It can send the same message to alot of d
 - sns access policies, ressource based for cross account or other services
 
 ## Fifo
-- same as [[SQS]] Fifo
+- same as [[SQS]] Fifo, subcriber only [[SQS]]
 
 ## Filtering
 - json policies on a subscriber 
-- will only recive msg which match the filter
-- can be used with fan out to split sns msgs to multiple deticated [[SQS]] queues
+- will only recieve msg which match the filter
+- can be used with fan out to split sns msgs to multiple dedicated [[SQS]] queues

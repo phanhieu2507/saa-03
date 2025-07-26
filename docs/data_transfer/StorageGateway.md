@@ -28,6 +28,8 @@ Can be used for a hybrid cloud setup, where data is produced on premise and sync
 
 ### Volume Gateway
 - Block Storage
+- iscsi protocol
+- backed by [[S3]] 
 - Backed by [[EBS]] snapshots
 
 #### Cached volumes
@@ -37,10 +39,12 @@ Can be used for a hybrid cloud setup, where data is produced on premise and sync
 - dataset on premise, backups are schedules to [[S3]]
 
 ### Tape Gateway
-- uses Virtual Tape libray
+- uses Virtual Tape library
+- iscsi interface
 - for backup processes using physical Tapes
 - can send directly into [[S3]] Glacier
 
 ## Hardware appliance
 - Can be bought from amazon.com
-- Is a harware which will be your gateway (like a firewall)
+- Is a hardware which will be your gateway (like a firewall)
+- work with volumn gateway, tape gate way,file gateway

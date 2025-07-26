@@ -1,0 +1,3 @@
+- managed open zfs
+- compatible with nfs
+- Point-in-time instantaneous cloning (helpful for testing new workloads)
