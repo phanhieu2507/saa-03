@@ -89,6 +89,12 @@
 - reduces rds and aurora failover time by 66%
 - enforces iam auth for db and store credentials in aws secrets manager 
 - RDS Proxy is never public and can only be used from within the vpc
+#### lambda with rds proxy
+- lambda must define in vpc ( because rds proxy never public)
+- connect to rds proxy -> database
+### Lambda
+- only for postgre sql
+- trigger, procedure => call lambda
 
 ## Enhanced Monitoring
 [[CloudWatch]] feature for RDS

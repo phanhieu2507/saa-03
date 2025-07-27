@@ -63,7 +63,7 @@
 - real time image transform
 - a/b testing
 - Dynmaic Web Apps at Edge
-- User prio
+- User Prioritization
 - tracking ad analytics
 - user auth 
 
@@ -75,6 +75,7 @@
 - sub ms startuptimes
 - managed in cloudfront
 - millions of request per second
+- use to change the viewer request and response
 
 #### Price
 - Free tier available
@@ -90,6 +91,7 @@
 - nodeJs or python
 - 1ks of request per second
 - can change every part of the request (viewer and origin)
+- author function in us east 1, then auto duplicated
 
 #### Price
 - no free tier

@@ -98,3 +98,6 @@ AWS Created custom DB tech, very high performance. Useful for global and serverl
 - no ssh
 - [[SecurityGroup]]
 - can audit log
+### Lambda
+- trigger, procedure => call lambda
+

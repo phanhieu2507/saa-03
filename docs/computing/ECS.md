@@ -26,6 +26,9 @@ ECS is AWS Docker Service. You can launch and modify containers as tasks in mult
 - ALB is good
 - NLB is for low latency
 - CLB not recommended
+### Mount to EFS
+- can be mounted to [[EFS]]
+- can not mount to [[S3]]
 ## Autoscaling
 - Scale on CPU, Mem or [[ELB]] traffic per target
 - Scaling Fargate is easier

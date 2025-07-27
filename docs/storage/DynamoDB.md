@@ -16,9 +16,10 @@ NoSQL Serverless DB. Tons of features and can be global.
 - backup and restore
 - in memory caching
 - transaction capabilty
+- rapidly envolve schema
 
 ##  Capacity Modes
-- provisoned capacity with optional autoscaling
+- provisoned capacity with optional autoscaling, pay for provisined rcu, wcu
 - on demand capacity
 
 ## Use cases

@@ -46,6 +46,12 @@ AWS Lambda means you dont care about any infrastructure, you just upload a funct
 - Pay per duration 400000GB-Seconds per month free
 - Price scales up after that depending on gbseconds (more will be cheaper per gbsecond)
 
+### Cold start vs provisioned
+- cold start: have a long time to start
+- provisioned concurrency: do not need to cold
+#### snap start
+- improve lambda function using net, python, java
+- snapshot the cache
 ## Limits Per Region
 
 ### Memory 
@@ -61,7 +67,7 @@ AWS Lambda means you dont care about any infrastructure, you just upload a funct
 - 512MB to 10GB
 
 ### Concurrency
-- 1000 but can be increased
+- 1000 but can be increased ( raise a ticket)
 
 ### Deployment
 
