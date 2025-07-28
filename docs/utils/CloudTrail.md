@@ -4,7 +4,8 @@
 - can be used to trigger events on AWS [[EventBride]]
 - enabled by default
 - a trail can be one or all regions
-- stored for 90 days default
+- stored for 90 days default ( in cloudtrait)
+- can be put logs into cloudwatch log
 - tranfer to [[S3]] for longer retention 
 
 ## Management Events

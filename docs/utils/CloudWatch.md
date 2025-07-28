@@ -11,7 +11,7 @@ Central service for all logs and metrics in AWS.
 
 ## Cloudwatch Metrics
 - metrics for every service in AWS
-- bucketet by namespaces
+- bucketed by namespaces
 - a metric can has up to 10 attributes
 - metrics can have timestamps
 - can create dashboard
@@ -25,7 +25,7 @@ Central service for all logs and metrics in AWS.
 
 ## Cloudwatch Logs
 - Log groups (application name)
-- log steam (log files, instances whitin on app, containers)
+- log stream (log files, instances whitin on app, containers)
 - can define log expiration days
 
 ### Targets To Send Logs To
@@ -81,8 +81,8 @@ Central service for all logs and metrics in AWS.
 
 ### Export
 -  to s3 up to 12 hours
-- api call is createexporttask
-- use log sbursciptions for real tiome
+- api call is create export task
+- use log subsciptions for real time
 
 ### Log subscriptions
 - Uses a filter
@@ -92,8 +92,8 @@ Central service for all logs and metrics in AWS.
 - use one  central kinesis and subscriptions
 
 ## Cloudwatch Agent
-- software on ec2
-- needs correct permission
+- software on ec2 ( default log from ec2 will not go to CloudWatch )
+- needs correct IAM permission
 
 ### Logs Agent
 - old version 
