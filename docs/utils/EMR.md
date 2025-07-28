@@ -11,3 +11,4 @@
 - task node just runs tasks (spot instances)
 ## Price
 - can any type of ec2 pricing (reserved, spot or on demand)
+- Can have long-running cluster, or transient (temporary) cluster

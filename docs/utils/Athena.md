@@ -31,5 +31,5 @@ pathtoBucket/pathtotable
 - 5 Dollar per TB scanned
 
 ## Federated query
-- query data from outside from [[S3]]
+- query data from outside from [[S3]] (relational db, non relation db, onpremise...)
 - use data source connectior ([[Lambda]] function which connects to another service)

@@ -16,8 +16,9 @@
 - some Redshift cluster have multiAZ 
 - snapshot: auto snap, manual
 - can auto copy to another region
+- store in s3
 
 
 ## Spectrum
-- attach S3 without the data being transfered to Redshift
+- attach S3 without the data being transfered to Redshift => query data without loading it
 - must have redshift cluster to run

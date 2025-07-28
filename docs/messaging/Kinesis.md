@@ -96,7 +96,7 @@ Kinesis is a set of services for streaming real time or next to real time data i
 ### Targets
 - [[S3]]
 - [[Redshift]]
-- Elasticsearch
+- Elasticsearch (Opensearch)
 - Splunk
 - custom http endpoints
 
