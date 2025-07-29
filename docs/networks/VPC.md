@@ -32,7 +32,7 @@ A stack of AWS ressources, more clearly the connectivity and setup options for a
 - recommended to extend private network into the cloud
 
 ## VPC Endpoint
-- privatly connect a VPC to supported services 
+- privately connect a VPC to supported services 
 - does not require an internet gateway, [[NAT]], [[VPN]] or [[DirectConnect]]
 - instances dont require public ip adresses
 - uses AWS Private Link as connection Line
@@ -41,15 +41,18 @@ A stack of AWS ressources, more clearly the connectivity and setup options for a
 
 ### Interface Endpoint
 - eni with private ip adress in the target subnet
+- must attach security group
 
 ### Gateway Endpoint
 - only for [[S3]] and [[DynamoDB]]
 - gateway which you set as a route target 
+- no need to charge
 
 ## VPC Peering
 - connection between 2 VPCs using private adresses
 - not transitive
 - need to setup route tables
+- can be connect VPCs in diffrent account/region
 
 ### Transit Gatway
 - hub for multiple peering connections
@@ -96,8 +99,8 @@ A stack of AWS ressources, more clearly the connectivity and setup options for a
 
 ## NACL
 - not stateful
-- firewall on subnet level
-- for outbound traffic allow ephemeral ports 32768-65535 (all ports for diffrent services to listen for outbound traffic)
+- firewall on subnet level ( one nacl per subnet)
+- for outbound traffic allow ephemeral ports ( client's port ) 32768-65535 (all ports for diffrent services to listen for outbound traffic)
 
 ## VPC Traffic Mirroring
 - capture and inspect network traffic

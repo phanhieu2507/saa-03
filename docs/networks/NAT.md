@@ -1,5 +1,5 @@
 # NAT
-- used in a public vpc subnet to enable instances in private subnet outbut ipv4 traffic to the internet
+- used in a public vpc subnet to enable instances in private subnet output ipv4 traffic to the internet
 - supports ACLs
 - supports flow logs
 ## Nat Instance
@@ -12,4 +12,8 @@
 - higher availabilty
 - higher bandwith
 - less ops needed
+- only use by instance from another subnet
+- no SCG needed
+- can use elastic IP
+- 1 AZ
 
