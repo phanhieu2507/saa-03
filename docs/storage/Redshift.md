@@ -22,3 +22,11 @@
 ## Spectrum
 - attach S3 without the data being transfered to Redshift => query data without loading it
 - must have redshift cluster to run
+- still need redshift cluster
+- 
+![[Screenshot 2025-10-13 at 11.25.27.png]]![[Screenshot 2025-10-13 at 15.40.07.png]]
+enhanced VPC routing: using SG, ACL, VPC endpoint. Customized networking
+
+![[Screenshot 2025-10-13 at 15.44.16.png]]
+snapshot is incremental
+![[Screenshot 2025-10-13 at 15.48.42.png]]

@@ -106,4 +106,32 @@
 
 ## Availability
 - can setup origin failover
-- an origin group may have a primary and a secondary origin
+- an origin group may have a primary and a secondary orig
+
+Cantrill
+
+1 cloudfront configuration have one or more origin
+edge location are smaller than AWS regions
+![[Screenshot 2025-10-19 at 9.09.34.png]]
+
+any distribution alway have the domain name
+cloudfront have no write caching
+![[Screenshot 2025-10-19 at 10.38.02.png]]
+behavior: sub configuration, work on the principle of a pattern match ( match patch)
+
+
+
+![[Screenshot 2025-10-19 at 10.41.55.png]]
+behavior
+
+distribution: price class, can accociate with web acl , waf
+default domain name have default ssl but the alternative domain need to import custome ssl
+trusted key word: restrict the viewer access => use signed url
+
+TTL and invalidation
+
+
+
+![[Screenshot 2025-10-19 at 14.22.30.png]]![[Screenshot 2025-10-19 at 15.26.33.png]]
+cache incalidation: exprire the obj no matter the ttl
+![[Screenshot 2025-10-19 at 15.29.46.png]]

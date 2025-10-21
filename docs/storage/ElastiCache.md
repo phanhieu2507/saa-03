@@ -46,4 +46,10 @@ volatile Caching Layer with high performance.
 ## Loading patterns
 - lazy (all read data is cached, but can become stale)
 - write through (adds or updates to the db are mirrored in the cache)
-- session store (expire data with time to live)
+- session store (expire data with time to live)![[Screenshot 2025-10-13 at 11.07.22.png]]
+code application must be changed
+![[Screenshot 2025-10-13 at 11.11.53.png]]
+![[Screenshot 2025-10-13 at 11.14.10.png]]
+Multi AZ: redis
+recover not impact the the performance: redis
+![[Screenshot 2025-10-13 at 11.17.30.png]]

@@ -34,3 +34,5 @@ UDP compatible global endpoint to speed up network traffic to application by usi
 ### [[Cloudfront]] vs [[GlobalAccelerator]]
 - cloudfront :  cache, image, video, .... application layer (7)
 - global accelerator: no cache, game, tcp,udp, .. networklayer, 2 any cast ip
+
+![[Screenshot 2025-10-19 at 21.56.43.png]]

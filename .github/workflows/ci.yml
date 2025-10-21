@@ -43,5 +43,5 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: ap-southeast-1          # Đặt theo region bucket của bạn
+          AWS_REGION: ap-northeast-1          # Đặt theo region bucket của bạn
           SOURCE_DIR: ./site

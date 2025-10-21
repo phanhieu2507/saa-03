@@ -11,3 +11,11 @@
 ## AWS SMS Server migration service
 - incremental replication of on premise live servers to AWS
 ### AWS DMS
+can not be migrate between 2 on premise
+![[Screenshot 2025-09-28 at 7.27.23.png]]
+task move the source to the des endpoint
+![[Screenshot 2025-09-28 at 7.32.56.png]]
+no downtime migration : choose DMS
+![[Screenshot 2025-09-28 at 7.36.31.png]]
+
+migration is using over internet![[Screenshot 2025-09-28 at 7.40.40.png]]

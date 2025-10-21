@@ -89,3 +89,53 @@ Define how Route 53 responds to DNS queries
 - can check by first 5120 bytes of the response
 ### 3 rd party 
 - If you buy your domain on a 3rd party registrar, you can still use Route 53 as the DNS Service provider
+
+
+Cantrill
+
+ hosted zone are database which are referenced via delegation using name server record
+ 
+ ![[Screenshot 2025-09-23 at 12.43.04.png]]![[Screenshot 2025-09-23 at 12.44.22.png]]![[Screenshot 2025-09-23 at 12.48.23.png]]![[Screenshot 2025-09-23 at 13.03.51.png]]![[Screenshot 2025-09-23 at 13.05.23.png
+ vpc must be accociated with the private zone
+ ![[Screenshot 2025-09-23 at 13.08.35.png]]
+ same domain name , public is a subset
+CNAME and ALIAS
+![[Screenshot 2025-09-23 at 13.16.14.png]]![[Screenshot 2025-09-23 at 13.28.53.png]]
+
+single routing![[Screenshot 2025-09-23 at 14.04.51.png]]
+
+health check
+![[Screenshot 2025-09-23 at 14.07.52.png]]
+
+failover routing
+![[Screenshot 2025-09-23 at 14.15.16.png]]
+
+multi routing
+active active
+multi service, return random, ![[Screenshot 2025-09-23 at 14.19.44.png]]
+
+weighted routing
+testing new soft ware versions
+repeated until a healthy record is chosen
+![[Screenshot 2025-09-23 at 15.41.58.png]]
+
+latency based routing:
+have a latency table
+![[Screenshot 2025-09-23 at 15.42.54.png]]
+
+geolocation routing
+when create record => tag location ( country, continent )
+return relevant record, check the state -> country -> continent -> default
+use to restrict content
+![[Screenshot 2025-09-23 at 15.57.33.png]]
+
+geppromixity
+as close as possible, base on distance
+routing is distance based including bias, make the resource larger
+
+![[Screenshot 2025-09-23 at 16.04.18.png]]
+
+interoperability : kha nang tuong tac
+![[Screenshot 2025-09-23 at 16.08.11.png]]![[Screenshot 2025-09-23 at 16.10.23.png]]![[Screenshot 2025-09-23 at 16.13.20.png]]![[Screenshot 2025-09-23 at 16.16.22.png]]
+
+DNSSEC with route 53
